@@ -1,0 +1,45 @@
+@use 'variaveis';
+
+.contatos {
+    background-color: variaveis.$corBranca;
+    padding-bottom: 30px;
+    &__titulo {
+        color: variaveis.$corPrincipal;
+        font-family: variaveis.$fontePadrao;
+        font-size: 36px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        &__ul {
+            display: flex;
+            justify-content: space-around;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            &__item {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

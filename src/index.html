@@ -5,10 +5,172 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3Z Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="styles/main.scss">
 </head>
+
+
 <body>
-    <h1>Seja bem vindo!</h1>
+    <header class="header">
+        <div class="header__container">
+            <div>
+                <img src="#" alt="logo">
+            </div>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button_header" href="#">Sobre nós</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button_header" href="#">Produtos</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button_header" href="#">Contatos</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__container__hamburger">
+            <div>
+                <img src="#" alt="logo">
+            </div>
+            <span class="material-symbols-outlined" data-opcao>menu</span>
+        </div>
+        <div class="header__container__opcao"  id="opcao">
+            <ul class="header__container__opcao__links">
+                <li class="header__container__opcao__links__item">
+                    <a class="button_header__opcao" href="#">Sobre nós</a>
+                </li>
+                <li class="header__container__opcao__links__item">
+                    <a class="button_header__opcao" href="#">Produtos</a>
+                </li>
+                <li class="header__container__opcao__links__item">
+                    <a class="button_header__opcao" href="#">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="sobre__container">
+            <div class="sobre__container__logo">
+                <img src="http://via.placeholder.com/300X300" alt="logo 3Z">
+            </div>
+            <div class="sobre__container__texto">
+                <h2 class="sobre__titulo">Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quaerat, in earum reiciendis illo iusto est tempora . Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum nesciunt reprehenderit ipsa doloremque, voluptate dolorum nihil labore commodi officia! Pariatur saepe, modi ut vel quos earum iure qui quis placeat.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cursos">
+        <h2 class="cursos__titulo">Nossos Produtos</h2>
+        <nav class="cursos__tabs">
+            <button data-tab-button="saude" class="cursos__tabs__button cursos__tabs__button--is-active">Saúde</button>
+            <button data-tab-button="financeiro" class="cursos__tabs__button">Financeiro</button>
+            <button data-tab-button="autoconhecimento" class="cursos__tabs__button">Auto Conhecimeno</button>
+        </nav>
+        <ul data-tab-id="saude" class="cursos__list cursos__list--is-active">
+            <li class="cursos__list__item">
+                <img src="./images/mao_com_dinheiro.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/mao_com_dinheiro.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/mao_com_dinheiro.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+        </ul>
+        <ul data-tab-id="financeiro" class="cursos__list">
+            <li class="cursos__list__item">
+                <img src="./images/negocios.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/negocios.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con Lorem ipsum dolor sit amet con Lorem ipsum dolor sit amet con Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/negocios.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet con</p>
+                <a href="#">Comprar</a>
+            </li>
+        </ul>
+        <ul data-tab-id="autoconhecimento" class="cursos__list">
+            <li class="cursos__list__item">
+                <img src="./images/saude.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim repudiandae totam mollitia ab, repellat dicta consequatur laboriosam perferendis nam quaerat a aspernatur ullam veniam voluptatem necessitatibus explicabo. Necessitatibus, dolor.</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/saude.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque fugiat dicta fuga repellendus dolorem nihil corporis soluta architecto vero eaque laudantium, consectetur perferendis inventore rem, qui tempora odio est!</p>
+                <a href="#">Comprar</a>
+            </li>
+            <li class="cursos__list__item">
+                <img src="./images/saude.jpg" alt="folder curso">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, repellendus modi optio laboriosam obcaecati cum error voluptatibus reiciendis accusantium unde ipsum animi fuga quaerat placeat odio iusto doloremque amet ad.</p>
+                <a href="#">Comprar</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contatos">
+        <h2 class="contatos__titulo">Contatos</h2>
+        <div class="contatos__container">
+            <ul class="contatos__container__ul">
+                <li class="contatos__container__ul__item">
+                    <a href="https://wa.me/+5511950005158" target="_blank">
+                        <img src="./images/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </li>
+                <li class="contatos__container__ul__item">
+                    <a href="https://www.instagram.com/3z_business/" target="_blank">
+                        <img src="./images/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li class="contatos__container__ul__item">
+                    <a href="#">
+                        <img src="./images/e-mail.png" alt="E-mail">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <ul class="faq__questions">
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item_pergunta" data-faq-question>Pergunta</div>
+                    <div class="faq__questions__item_resposta">Respostas</div>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item_pergunta" data-faq-question>Pergunta</div>
+                    <div class="faq__questions__item_resposta">Respostas</div>
+                </li>
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item_pergunta" data-faq-question>Pergunta</div>
+                    <div class="faq__questions__item_resposta">Respostas</div>
+                </li>
+            </ul>
+        </div> -->
+
+    </section>
+    <section class="footer">
+    </section>
+
+
+
+
+
+
     <script src="scripts/main.js"></script>
 </body>
 </html>

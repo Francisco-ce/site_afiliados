@@ -1,0 +1,7 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$corPrincipal;
+    width: 100%;
+    height: 10vh;
+}

@@ -1,0 +1,53 @@
+@use 'variaveis';
+
+.sobre {
+    background-color: variaveis.$corBranca;
+    border-bottom: 2px solid variaveis.$corPrincipal;
+
+    &__container {
+        display: flex;
+        max-width: 1024px;
+        margin: 0 auto;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    &__titulo {
+        margin-top: 15 px;
+        color: variaveis.$corPrincipal;
+        font-family: variaveis.$fontePadrao;
+        max-width: 1024px;
+        margin: 0 auto;
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        margin-right: 35px;
+    }
+
+
+
+    @media(max-width: 768px) {
+        &__container {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            padding: 8px 36px;
+            text-align: center;
+            
+        }
+
+        img {
+            margin: 8px;
+            // padding: 8px;
+        }
+    }
+
+}
